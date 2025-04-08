@@ -29,12 +29,10 @@ public class MqReceiver {
     }
 
     public void storeMessageInDatabase(String content, String messageType) {
-        // Create a new Message entity
         Message message = new Message();
         message.setContent(content);
         message.setReceivedAt(LocalDateTime.now());
         message.setMessageType(messageType);
-        // Save the message to the database
         messageRepository.save(message);
     }
 }

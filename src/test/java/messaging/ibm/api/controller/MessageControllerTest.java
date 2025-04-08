@@ -34,29 +34,20 @@ public class MessageControllerTest {
 
     @Test
     public void testPublishMessageSuccess() throws Exception {
-        // Mock l'envoi du message dans la file MQ
         doNothing().when(jmsTemplate).convertAndSend(anyString(), anyString());
-
-        // Simuler une requête POST avec un message valide
-        mockMvc.perform(post("/messages/publish")  // Correct path: /messages/publish
+        mockMvc.perform(post("/messages/publish")
                 .param("message", "Valid message"))
                 .andExpect(status().isOk())
                 .andExpect(content().string("Message publié avec succès : Valid message"));
-
         verify(jmsTemplate, times(1)).convertAndSend("TEST.QUEUE", "Valid message");
     }
 
     @Test
     public void testGetMessages() throws Exception {
-        // Préparer les données simulées
         Message message = new Message();
         message.setContent("Message 1");
         List<Message> messages = List.of(message);
-
-        // Simuler le comportement du service
         when(messageService.getMessages()).thenReturn(messages);
-
-        // Tester l'API GET /api/messages
         mockMvc.perform(get("/messages"))
                 .andExpect(status().isOk())
                 .andExpect(jsonPath("$[0].content").value("Message 1"));
