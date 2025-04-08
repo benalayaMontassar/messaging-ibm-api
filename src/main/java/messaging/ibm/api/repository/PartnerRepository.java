@@ -1,6 +1,6 @@
-package com.example.demo.repository;
+package messaging.ibm.api.repository;
 
-import com.example.demo.model.Partner;
+import messaging.ibm.api.model.Partner;
 import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.stereotype.Repository;
 

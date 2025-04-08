@@ -1,7 +1,7 @@
-package com.example.demo.mq;
+package messaging.ibm.api.mq;
 
-import com.example.demo.model.Message;
-import com.example.demo.repository.MessageRepository;
+import messaging.ibm.api.model.Message;
+import messaging.ibm.api.repository.MessageRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 import javax.jms.TextMessage;

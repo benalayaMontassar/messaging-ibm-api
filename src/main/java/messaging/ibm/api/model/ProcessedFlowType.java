@@ -1,4 +1,4 @@
-package com.example.demo.model;
+package messaging.ibm.api.model;
 
 public enum ProcessedFlowType {
     MESSAGE,

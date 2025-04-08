@@ -1,7 +1,7 @@
-package com.example.demo.service;
+package messaging.ibm.api.service;
 
 
-import com.example.demo.mq.MqReceiver;
+import messaging.ibm.api.mq.MqReceiver;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.jms.annotation.JmsListener;
 import org.springframework.stereotype.Service;

@@ -1,8 +1,7 @@
-package com.example.demo.controller;
+package messaging.ibm.api.controller;
 
-import com.example.demo.model.Message;
-import com.example.demo.repository.MessageRepository;
-import com.example.demo.service.MessageService;
+import messaging.ibm.api.model.Message;
+import messaging.ibm.api.service.MessageService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
 import org.springframework.jms.core.JmsTemplate;

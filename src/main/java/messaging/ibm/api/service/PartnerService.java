@@ -1,8 +1,8 @@
-package com.example.demo.service;
+package messaging.ibm.api.service;
 
 
-import com.example.demo.model.Partner;
-import com.example.demo.repository.PartnerRepository;
+import messaging.ibm.api.model.Partner;
+import messaging.ibm.api.repository.PartnerRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 

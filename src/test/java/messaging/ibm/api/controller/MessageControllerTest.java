@@ -1,17 +1,12 @@
-package com.example.demo.controller;
+package messaging.ibm.api.controller;
 
-import com.example.demo.model.Message;
-import com.example.demo.mq.MqReceiver;
-import com.example.demo.service.MessageService;
-import com.example.demo.service.MqReceiverService;
+import messaging.ibm.api.model.Message;
+import messaging.ibm.api.service.MessageService;
 import org.junit.jupiter.api.Test;
-import org.junit.jupiter.api.extension.ExtendWith;
-import org.mockito.junit.jupiter.MockitoExtension;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.test.autoconfigure.web.servlet.AutoConfigureMockMvc;
 import org.springframework.boot.test.context.SpringBootTest;
 import org.springframework.boot.test.mock.mockito.MockBean;
-import org.springframework.http.MediaType;
 import org.springframework.jms.core.JmsTemplate;
 import org.springframework.test.web.servlet.MockMvc;
 

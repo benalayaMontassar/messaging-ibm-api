@@ -1,7 +1,7 @@
-package com.example.demo.controller;
+package messaging.ibm.api.controller;
 
-import com.example.demo.model.Partner;
-import com.example.demo.service.PartnerService;
+import messaging.ibm.api.model.Partner;
+import messaging.ibm.api.service.PartnerService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
